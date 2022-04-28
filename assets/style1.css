@@ -1,7 +1,16 @@
-.profile-sctn {
+.profile-sctn .place-sctn {
     width: 100%;
     height: auto;
     background-color: #fff;
+}
+
+.place-sctn form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-sctn form {
@@ -37,7 +46,7 @@
 
 .profile-sctn-middle {
     width: 60%;
-    height: 60;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,7 +97,7 @@
 }
 
 .form-group{
-    height: 2em;
+    height: 5vh;
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
@@ -100,6 +109,7 @@
 .label-profile{
     width: 7vw;
     height: 2em;
+   
 }
 
 .input-profile{    
@@ -114,7 +124,7 @@
 .button-profile{
     color: #fff;
     background-color: #9E005D;
-    width: 8vw;  
+    width: 7vw;
     height: 2em;  
     font-size: 1em;
     border-radius: 0.7em;
@@ -129,7 +139,7 @@
 }
 
 .select-profile{
-    width: 10vw;
+    width: 7vw;
     height: 2.5em;
     border: 0.1em solid #9E005D;       
     border-radius: 0.7em;    
@@ -138,7 +148,7 @@
     font-weight: 700;
 }
 .form-group-hobbies{
-    height: 10em;
+    height: 20vh;
     width: 100%;    
     display: flex;
     flex-direction:column;
@@ -149,11 +159,53 @@
     width: 100%;
 }
 .input-profile-hobbies{
-    height: 8em;
+    height: 6em;
     width: 100%;
     border: 0.1em solid #9E005D;       
     border-radius: 0.7em;    
     color: #9E005D;
     font-size: 0.7em;
     font-weight: 700;
+}
+
+.profile-sctn-about {
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:flex-start;
+    /* border: 1px solid black;  */
+}
+
+.profile-sctn-accept {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+    /* border: 1px solid black;  */
+}
+
+.button-profile{
+    color: #fff;
+    background-color: #9E005D;
+    width: 20vw;  
+    height: 2em;  
+    font-size: 1em;
+    border-radius: 0.7em;
+    transition: all 0.6s ease;
+    border: 0.1em solid #fff;  
+}
+
+.button-profile:hover{
+    background-color: #662d9144;
+    border: 0.1em solid #9E005D;
+    color: #9E005D;
+}
+
+.form-group h2{
+    font-size: 1.5em;
+    color: #9E005D;
 }
