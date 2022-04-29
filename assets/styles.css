@@ -16,16 +16,18 @@ body {
 
 
 nav {
+    height: 25vh;
     position: sticky;
     top: 0;
     background-image: linear-gradient(to right, #662D91, #D4145A);
+    z-index: 1;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 25vh;
+    align-items: center; 
+    height: 100%;  
     color: #ffffff;
 }
 

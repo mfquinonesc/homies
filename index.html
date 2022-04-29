@@ -341,25 +341,25 @@
   </section>
 
 
-<section class="searching-sctn">  
-  <div class="searching-sctn-head"> 
-    <h2>DONDE BUSCAS?...</h2>
-  </div>  
+  <section class="searching-sctn">
+    <div class="searching-sctn-head">
+      <h2>DONDE BUSCAS?...</h2>
+    </div>
 
- <div class="searching-sctn-middle"> 
-    <div class="searching-sctn-left">  
+    <div class="searching-sctn-middle">
+      <div class="searching-sctn-left">
         <form class="searching-sctn-head-form" action="">
-            <input class="searching-sctn-head-form-input" type="text">
-            <button class="searching-sctn-head-form-button">BUSCAR</button>
-        </form>  
+          <input class="searching-sctn-head-form-input" type="text">
+          <button class="searching-sctn-head-form-button">BUSCAR</button>
+        </form>
+        <p id="lat">0</p>
+        <p id="lon">0</p>
+      </div>
+      <div id="map" class="searching-sctn-right"></div>
     </div>
-    <div class="searching-sctn-right">
 
-    </div>
- </div>
-
- <div class="searching-sctn-bottom"> 
-</section>
+    <div class="searching-sctn-bottom"></div>    
+  </section>
 
 
   <footer>
@@ -382,6 +382,12 @@
 
   <script src="./assets/script.js"></script>
   <script src="./assets/script1.js"></script>
+  <script src="./assets/script2.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <script type="module" src="./assets/script_maps.js"></script>
 
 </body>
 

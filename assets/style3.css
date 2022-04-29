@@ -34,12 +34,12 @@
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content:space-between;
 }
 
 .searching-sctn-head-form-input{
-    width: 100%;
+    width: 90%;
     height: 9vh;
     border: 0.1em solid #D4145A;
     border-radius: 2em;
@@ -47,7 +47,7 @@
 }
 
 .searching-sctn-head-form-button{
-    width: 100%;
+    width: 90%;
     height: 9vh;
     border: 0.2em solid #D4145A;
     border-radius: 2em;
