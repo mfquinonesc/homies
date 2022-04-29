@@ -52,8 +52,8 @@ nav ul li:hover {
 }
 
 .menu-img{
-    width: 10vw;
-    height:  10vw;
+    width:25vh;
+    height:auto;
     background-color: #000;
 } 
 
