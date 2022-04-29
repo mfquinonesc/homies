@@ -8,6 +8,9 @@ var map = new mapboxgl.Map({
     zoom: 13 // Zoom inicial
 });
 
+let input_direction = document.getElementById("direction");
+let sqrt_maps = document.getElementById("sqrt_maps");
+let form_maps = document.getElementById("form_maps");
 
 
 var marker = new mapboxgl.Marker();
@@ -18,6 +21,14 @@ function add_marker (event) {
   marker.setLngLat(coordinates).addTo(map);
 }
 
+
+const hideform = () => {  
+  // sqrt_maps.className = "fademap profile-sctn-middle-map";
+  // form_maps.className = "fademap profile-sctn-middle map-hide";
+};
+
 map.on('click', add_marker);
 
-
+input_direction.onfocus = function(){
+  hideform();
+};

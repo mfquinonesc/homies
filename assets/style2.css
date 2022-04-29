@@ -12,6 +12,15 @@
   }
   
 
- .a-hide{
+.a-hide{
     display: none;
+}
+
+.map-hide{
+   display: none;
+}
+
+@keyframes fademap {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
