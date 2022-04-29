@@ -51,6 +51,13 @@ nav ul li:hover {
     border: 1px solid #fff;
 }
 
+.menu-img{
+    width: 10vw;
+    height:  10vw;
+    background-color: #000;
+} 
+
+
 
 .main-sctn {
     width: 100%;
@@ -160,12 +167,10 @@ nav ul li:hover {
     width: 20vw;
     border-radius: 1.5em;
     box-shadow: 5px 5px #e0e0e0;
-    margin: 0 1em;
+    margin: 0 10em;
 }
 
-.slide-home-hide {
-    display: none;
-}
+
 
 .action-sctn-div-3-div-1 {
     height: 40vh;
