@@ -6,13 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Homies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles.css">
   <link rel="stylesheet" href="./assets/style1.css">
   <link rel="stylesheet" href="./assets/style2.css">
   <link rel="stylesheet" href="./assets/style3.css">
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 
 
 </head>
@@ -371,11 +374,9 @@
         <form class="searching-sctn-head-form" action="">
           <input class="searching-sctn-head-form-input" type="text">
           <button class="searching-sctn-head-form-button">BUSCAR</button>
-        </form>
-        <p id="lat">0</p>
-        <p id="lon">0</p>
+        </form>        
       </div>
-      <div id="map" class="searching-sctn-right"></div>
+      <div id="map" class="searching-sctn-right"> </div>
     </div>
 
     <div class="searching-sctn-bottom"></div>    
@@ -404,10 +405,8 @@
   <script src="./assets/script1.js"></script>
   <script src="./assets/script2.js"></script>
 
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-    defer></script>
-  <script type="module" src="./assets/script_maps.js"></script>
+  
+
 
 </body>
 
