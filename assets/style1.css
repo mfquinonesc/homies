@@ -71,7 +71,7 @@
     height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items:flex-end;
     /* border: 1px solid black; */
     z-index: 0;

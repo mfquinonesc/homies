@@ -18,17 +18,18 @@ var marker = new mapboxgl.Marker();
 function add_marker (event) {
   var coordinates = event.lngLat;
   console.log('Lng:', coordinates.lng, 'Lat:', coordinates.lat); 
+  input_direction.innerText = coordinates.lng + "," + coordinates.lat;
   marker.setLngLat(coordinates).addTo(map);
 }
-
-
-const hideform = () => {  
-  // sqrt_maps.className = "fademap profile-sctn-middle-map";
-  // form_maps.className = "fademap profile-sctn-middle map-hide";
-};
 
 map.on('click', add_marker);
 
 input_direction.onfocus = function(){
   hideform();
+};
+
+
+const hideform = () => {  
+  // sqrt_maps.className = "fademap profile-sctn-middle-map";
+  // form_maps.className = "fademap profile-sctn-middle map-hide";
 };
