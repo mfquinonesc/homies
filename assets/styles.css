@@ -105,7 +105,7 @@ nav ul li:hover {
 }
 
 .action-sctn-div-1 a {
-    padding: 1em 7em;
+    padding: 0.3em 4em;
     background-image: linear-gradient(to right, #662D91, #D4145A);
     color: #ffffff;
     margin: 2em;
@@ -135,7 +135,7 @@ nav ul li:hover {
 
 .action-sctn-div-2 h2 {
     color: #662D91;
-    font-size: 1.5em;
+    font-size: 2.5giem;
     font-weight: 900;
 }
 
@@ -162,25 +162,30 @@ nav ul li:hover {
 }
 
 .slide-home {
-    height: 60vh;
-    width: 20vw;
-    border-radius: 1.5em;
+    height: 50vh;
+    width: 17vw;
+    border-radius: 1em;
     box-shadow: 5px 5px #e0e0e0;
     margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+
 }
 
 
 
 .action-sctn-div-3-div-1 {
-    height: 40vh;
-    width: 20vw;
+    height: 30vh;
+    width: 17vw;
 }
 
 .action-sctn-div-3-div-1 img {
-    height: 40vh;
-    width: 20vw;
-    border-top-left-radius: 1.5em;
-    border-top-right-radius: 1.5em;
+    height: 30vh;
+    width: 17vw;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .action-sctn-div-3-div-2 {
@@ -188,6 +193,7 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .action-sctn-div-3-div-2 h3 {
