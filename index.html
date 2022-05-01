@@ -13,11 +13,10 @@
   <link rel="stylesheet" href="./assets/style1.css">
   <link rel="stylesheet" href="./assets/style2.css">
   <link rel="stylesheet" href="./assets/style3.css">
-
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <link rel="stylesheet" href="./assets/style4.css">
+  
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-
-
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
 </head>
 
 <body>
@@ -25,14 +24,15 @@
     <ul>
       <li id="option0"><a href="#"><img class="menu-img" src="./assets/LOGO.png" alt="MY HOMIES"></a></li>
       <li id="option1"><a href="#">BUSCAR HABITACIONES</a></li>
-      <li id="option2"><a href="#">BUSCAR ROMMATES</a></li>
+      <li id="option2"><a href="#">BUSCAR ROOMATES</a></li>
       <li id="option3">
         <a href="#"><b>INICIO</b></a> / <a href="#"><b>REGISTRO</b></a>
       </li>
     </ul>
   </nav>
 
-  <section class="main-sctn">
+  <section class="main-sctn">   
+    <p>Con MY HOMIES  encontarás el lugar perfecto y la compañia ideal para vivir como te gusta.</p> 
     <div>
       <img src="./assets/llavero.png" alt="Image">
     </div>
@@ -51,9 +51,6 @@
 
       <a id="btn-left">&#10094;</a>
 
-
-
-
       <div class="slide-home fade">
         <div class="action-sctn-div-3-div-1">
           <img src="./assets/hab1.jpg" alt="">
@@ -64,7 +61,7 @@
         </div>
       </div>
 
-      <div class="slide-home fade a-hide">
+      <div class="slide-home fade">
         <div class="action-sctn-div-3-div-1">
           <img src="./assets/hab2.jpg" alt="">
         </div>
@@ -75,7 +72,7 @@
       </div>
 
 
-      <div class="slide-home fade a-hide">
+      <div class="slide-home fade">
         <div class="action-sctn-div-3-div-1">
           <img src="./assets/hab3.jpg" alt="">
         </div>
@@ -88,7 +85,7 @@
 
       <div class="slide-home fade a-hide">
         <div class="action-sctn-div-3-div-1">
-          <img src="./assets/hab1.jpg" alt="">
+          <img src="./assets/hab4.jpg" alt="">
         </div>
         <div class="action-sctn-div-3-div-2">
           <h3>HABITACIÓN 4</h3>
@@ -98,7 +95,7 @@
 
       <div class="slide-home fade a-hide">
         <div class="action-sctn-div-3-div-1">
-          <img src="./assets/hab2.jpg" alt="">
+          <img src="./assets/hab5.jpg" alt="">
         </div>
         <div class="action-sctn-div-3-div-2">
           <h3>HABITACIÓN 5</h3>
@@ -236,12 +233,12 @@
 
       <div class="profile-sctn-title">
         <h2>ARRIENDO</h2>
-        <p>Editar información</p>
+        <p>Editar información.</p>
       </div>
 
       
 
-      <div id="form_maps" class="profile-sctn-middle">
+      <div  class="profile-sctn-middle">
         <div class="profile-sctn-left">
           <img src="" alt="Upload image">
           <button>Cargar imagen</button>
@@ -254,10 +251,12 @@
             <label class="label-profile" for="">Ciudad</label>
             <input class="input-profile" type="text">
           </div>
+
           <div class="form-group">
-            <label class="label-profile" for="">Dirección</label>
-            <input id="direction" class="input-profile" type="text">
+            <label class="label-profile" for="">Dirección</label> 
+            <input class="input-profile" type="text">            
           </div>
+
           <div class="form-group">
             <label class="label-profile" for="">Precio</label>
             <input class="input-profile" type="text">
@@ -281,19 +280,16 @@
           </div>
 
         </div>
-
-
-
       </div>
 
-      <div id="sqrt_maps" class="profile-sctn-middle-map">
-        <div id="map" class="map-middle"></div>
-        <button class="map-btn">Aceptar</button>
+      <div  class="profile-sctn-middle-map">
+        <label class="label-profile-hobbies" for="">Marca en el mapa la ubicación de tu habitación.</label>
+        <div id="map" class="map-middle"></div>       
       </div>
       
       <div class="profile-sctn-about">
         <div class="form-group-hobbies">
-          <label class="label-profile-hobbies" for="">Acerca del lugar</label>
+          <label class="label-profile-hobbies" for="">Acerca del lugar.</label>
           <input class="input-profile-hobbies" type="text">
         </div>
       </div>
@@ -312,8 +308,8 @@
     <form action="">
 
       <div class="profile-sctn-title">
-        <h2>BUSCO HABITACION...</h2>
-        <p>Editar perfil</p>
+        <h2>BUSCO HABITACIÓN...</h2>
+        <p>Editar perfil.</p>
       </div>
 
 
@@ -343,9 +339,9 @@
           <div class="form-group">
             <label class="label-profile" for="">Hobbies</label>
             <select class="select-profile">
-              <option>1</option>
+              <option>Lectura</option>
             </select>
-            <button class="button-profile">Agregar</button>
+            <button class="button-profile-direction">Agregar</button>
           </div>
 
           <div class="form-group-hobbies">
@@ -369,7 +365,7 @@
   </section>
 
 
-  <section class="searching-sctn">
+  <!-- <section class="searching-sctn">
     <div class="searching-sctn-head">
       <h2>DONDE BUSCAS?...</h2>
     </div>
@@ -385,7 +381,33 @@
     </div>
 
     <div class="searching-sctn-bottom"></div>    
+  </section> -->
+
+  <section class="place-sctn">
+    <form action="">
+
+      <div class="profile-sctn-title">
+        <h2>DONDE BUSCAS?...</h2>
+        <p>Empieza tu experiencia.</p>
+      </div>
+
+      <div  class="profile-sctn-middle-map">
+        <label class="label-profile-hobbies" for="">Marca en el mapa el lugar donde te gustaría vivir.</label>
+        <div id="map2" class="map-middle"></div>       
+      </div>
+      
+      <div class="profile-sctn-accept">
+        <button class="button-profile">Buscar</button>
+      </div>
+
+
+
+    </form>
   </section>
+
+
+
+
 
 
   <footer>
@@ -405,12 +427,13 @@
     </div>
   </footer>
 
-
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
   <script src="./assets/script.js"></script>
   <script src="./assets/script1.js"></script>
   <script src="./assets/script2.js"></script>
+  <!-- <script src="./assets/script4.js"></script> -->
 
-  
 
 
 </body>
